@@ -41,7 +41,7 @@ En esta ocasión, se dispone de Datasets importantes para nuestro proyecto. Hemo
   a juegos específicos en la plataforma Steam.
 - **australian_users_reviews.json**: Este conjunto de datos recopila los comentarios de los usuarios acerca de los juegos en Steam, abarcando tanto sus recomendaciones como la fecha en que fueron proporcionadas.
 
-## **Problematica del Proyectos**
+## **Problemática del Proyectos**
 Steam enfrentaba el desafío de carecer de un sistema eficaz de recomendación de videojuegos para sus usuarios. Los datos iniciales eran complejos y poco estructurados, requiriendo una intervención significativa en el ámbito de la Ingeniería de Datos. En mi rol como MLOps Engineer, asumí la responsabilidad de transformar estos datos crudos, llevando a cabo tareas de Data Engineering y desarrollando un Producto Mínimo Viable (PMV o MVP) para abordar de manera integral este problema. Además de estas funciones esenciales, también desempeñé otras responsabilidades cruciales para optimizar y potenciar la implementación del sistema de recomendación.
 
 ## **Herramientas de Proyecto**
@@ -95,7 +95,7 @@ En esta fase se realiza el proceso de análisis de datos donde se exploran y exa
 
 El Notebook donde se realizo el proceso EDA es el siguiente: [Analisis Exploratorio de Datos](https://github.com/Kipros21/PI01-MLOPS-STEAMGAMES/blob/main/EDA_analisis_exploratorio_datos.ipynb)
 
-## **Etapa Modelado de Aprendizaje Automatico ML (Machine Learning)**
+## **Etapa Modelado de Aprendizaje Automático ML (Machine Learning)**
 En esta etapa se procede con la construcción de nuestro modelo de recomendación, hemos optado por utilizar el enfoque de similitud de coseno. Este modelo se centra en identificar juegos que comparten similitudes con aquellos que ya nos gustan. La lógica subyacente radica en que encontrar juegos con una similitud coseno más alta en comparación con nuestros favoritos puede resultar más valioso, ya que sugiere una afinidad más cercana en términos de características y preferencias. Este método se ajusta a la idea de descubrir juegos que se asemejan más a nuestros gustos actuales, mejorando así la calidad de las recomendaciones.
 
 El notebook donde se encontrará dicho modelado es el siguiente: [Modelo de Aprendizaje](https://github.com/Kipros21/PI01-MLOPS-STEAMGAMES/blob/main/fea_eng_and_ML.ipynb)
