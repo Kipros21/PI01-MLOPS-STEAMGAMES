@@ -1,10 +1,11 @@
 <h1 align=center> PROYECTO INDIVIDUAL N°01 - MLOps STEAM VIDEOGAMES </h1>
 
 # **Machine Learning Operations (MLOps)**
-![image](https://github.com/Kipros21/PI01-MLOps-STEAMGAMES/assets/142346448/1fa79a4f-aa53-4c03-a88d-c1167568ed58)
+![image](https://github.com/Kipros21/PI01-MLOPS-STEAMGAMES/assets/142346448/b59a4dd8-c588-48eb-8b0d-29f6b4025950)
+
 
 ## **Contexto**
-![image](https://github.com/Kipros21/PI01-MLOps-STEAMGAMES/assets/142346448/0f48f3f3-95c2-4c53-b579-d13279b5d0b0)
+![image](https://github.com/Kipros21/PI01-MLOPS-STEAMGAMES/assets/142346448/f8d06ad2-d816-4c0a-bedd-5a4cf19f3fa9)
 
 Steam, desarrollada por Valve Corporation desde su lanzamiento en 2003, comenzó como una plataforma para actualizar automáticamente juegos de Valve. Con el tiempo, se expandió para incluir juegos de terceros, convirtiéndose en una plataforma líder en distribución digital de videojuegos. Aunque las cifras precisas de SteamSpy están limitadas desde 2018, la plataforma cuenta con más de 325 millones de usuarios y un catálogo que supera los 25,000 juegos. A pesar de las restricciones en la recopilación de estadísticas, Steam sigue siendo una fuerza influyente en la industria del gaming, destacando por su comunidad activa y diversa.
 
@@ -26,12 +27,12 @@ Este proyecto simula el rol integral de un MLOps Engineer para la plataforma mul
 Desarrollar un Producto Mínimo Viable (PMV o MVP) que consta de una API deployada en un servicio en la nube. Esta API realizará dos funciones esenciales: un análisis de sentimientos sobre los comentarios de los usuarios de los juegos y la recomendación de juegos basada en el nombre de un juego proporcionado y/o en los gustos de un usuario específico.
 
 ## **Esquema de Proyecto**
-![image](https://github.com/Kipros21/PI01-MLOps-STEAMGAMES/assets/142346448/8dbc7518-4207-492d-a8bd-a6bff69459aa)
+![image](https://github.com/Kipros21/PI01-MLOPS-STEAMGAMES/assets/142346448/093f94a6-b032-42c6-a847-50c5c9430ce0)
 
 Siguiendo el esquema como referencia se solicito elaborar un sistema de recomendacion de videojuegos para usuarios,realizar las transformaciones correspondientes , feature engineering ,
 desarrolloar un API y unas funciones que se consumiran en el API y se realizara el deploy correspondiente .
 
-## **Analitica de Información de Proyecto**
+## **Analítica de Información de Proyecto**
 En esta ocasión, se dispone de Datasets importantes para nuestro proyecto. Hemos empleado un conjunto de datos que detalla información sobre juegos en la plataforma Steam, específicamente enfocado en la comunidad australiana. Los tres conjuntos de datos asociados se encuentran almacenados en la carpeta Dataset, la cual se presenta a continuación:
 
 - **output_steam_games.json**: alberga información detallada sobre diversos juegos en la plataforma Steam. La información incluye aspectos clave como el nombre del juego, el desarrollador, el género, 
@@ -44,6 +45,7 @@ En esta ocasión, se dispone de Datasets importantes para nuestro proyecto. Hemo
 Steam enfrentaba el desafío de carecer de un sistema eficaz de recomendación de videojuegos para sus usuarios. Los datos iniciales eran complejos y poco estructurados, requiriendo una intervención significativa en el ámbito de la Ingeniería de Datos. En mi rol como MLOps Engineer, asumí la responsabilidad de transformar estos datos crudos, llevando a cabo tareas de Data Engineering y desarrollando un Producto Mínimo Viable (PMV o MVP) para abordar de manera integral este problema. Además de estas funciones esenciales, también desempeñé otras responsabilidades cruciales para optimizar y potenciar la implementación del sistema de recomendación.
 
 ## **Herramientas de Proyecto**
+![Python](https://img.shields.io/badge/-Python-333333?style=flat&logo=python)
 ![Pandas](https://img.shields.io/badge/-Pandas-333333?style=flat&logo=pandas)
 ![Numpy](https://img.shields.io/badge/-Numpy-333333?style=flat&logo=numpy)
 ![Matplotlib](https://img.shields.io/badge/-Matplotlib-333333?style=flat&logo=matplotlib)
@@ -72,31 +74,31 @@ Una vez que los datos se han extraído, la etapa de transformación entra en jue
   entender y categorizar la actitud expresada en los comentarios de manera cuantitativa.
 
   El análisis ETL de los archivos brutos fueron realizados en estos Notebooks:
-  - [ETL steam_games](https://github.com/Kipros21/PI01-MLOps-STEAMGAMES/blob/main/ETL_steam_games.ipynb)
-  - [ETL_user_reviews](https://github.com/Kipros21/PI01-MLOps-STEAMGAMES/blob/main/ETL_australian_user_reviews.ipynb)
-  - [ETL user_items](https://github.com/Kipros21/PI01-MLOps-STEAMGAMES/blob/main/ETL_australian_user_items.ipynb)
-  - [ETL_sentiment_analysis](https://github.com/Kipros21/PI01-MLOps-STEAMGAMES/blob/main/sentiment_analysis.ipynb)
+  - [ETL steam_games](https://github.com/Kipros21/PI01-MLOPS-STEAMGAMES/blob/main/ETL_steam_games.ipynb)
+  - [ETL_user_reviews](https://github.com/Kipros21/PI01-MLOPS-STEAMGAMES/blob/main/ETL_australian_user_reviews.ipynb)
+  - [ETL user_items](https://github.com/Kipros21/PI01-MLOPS-STEAMGAMES/blob/main/ETL_australian_user_items.ipynb)
+  - [ETL_sentiment_analysis](https://github.com/Kipros21/PI01-MLOPS-STEAMGAMES/blob/main/sentiment_analysis.ipynb)
 
 - **Carga (Load):**
 Después de transformar los datos, la etapa final es cargarlos en un repositorio destinado al análisis. Este puede ser un almacén de datos, una base de datos relacional, un data warehouse, o cualquier plataforma definida para el manejo de grandes volúmenes de información. La carga se realiza de manera eficiente para garantizar la disponibilidad y accesibilidad de los datos para su uso posterior.
 
-Los Dataset limpios son los siguientes:
-- [Data Limpia - steam_games](https://github.com/Kipros21/PI01-MLOps-STEAMGAMES/blob/main/Dataset_Clean/steam_games_clean.parquet)
-- [Data Limpia - user_reviews](https://github.com/Kipros21/PI01-MLOps-STEAMGAMES/blob/main/Dataset_Clean/australian_user_reviews_sentanaly_clean.parquet)
-- [Data Limpia - user_items](https://github.com/Kipros21/PI01-MLOps-STEAMGAMES/blob/main/Dataset_Clean/australian_user_items_clean.parquet)
-- [Data Limpia - recomendaciones_sentimiento](https://github.com/Kipros21/PI01-MLOps-STEAMGAMES/blob/main/Dataset_Clean/df_recomendaciones.parquet)
-- [Data Limpia - recomendacion_juegos](https://github.com/Kipros21/PI01-MLOps-STEAMGAMES/blob/main/Dataset_Clean/juego_df_clean.parquet)
-- [Data Limpia - recomendacion_usuario](https://github.com/Kipros21/PI01-MLOps-STEAMGAMES/blob/main/Dataset_Clean/usuario_df_clean.parquet)
+  Los Dataset limpios son los siguientes:
+  - [Data Limpia - steam_games](https://github.com/Kipros21/PI01-MLOPS-STEAMGAMES/blob/main/Dataset_Clean/steam_games_clean.parquet)
+  - [Data Limpia - user_reviews](https://github.com/Kipros21/PI01-MLOPS-STEAMGAMES/blob/main/Dataset_Clean/australian_user_reviews_sentanaly_clean.parquet)
+  - [Data Limpia - user_items](https://github.com/Kipros21/PI01-MLOPS-STEAMGAMES/blob/main/Dataset_Clean/australian_user_items_clean.parquet)
+  - [Data Limpia - recomendaciones_sentimiento](https://github.com/Kipros21/PI01-MLOPS-STEAMGAMES/blob/main/Dataset_Clean/df_recomendaciones.parquet)
+  - [Data Limpia - recomendacion_juegos](https://github.com/Kipros21/PI01-MLOPS-STEAMGAMES/blob/main/Dataset_Clean/juego_df_clean.parquet)
+  - [Data Limpia - recomendacion_usuario](https://github.com/Kipros21/PI01-MLOPS-STEAMGAMES/blob/main/Dataset_Clean/usuario_df_clean.parquet)
 
 ## **Etapa EDA (Exploratory Data Analysis)**
 En esta fase se realiza el proceso de análisis de datos donde se exploran y examinan los datos de manera inicial y general. El objetivo principal del EDA es comprender la naturaleza de los datos, identificar patrones, detectar posibles anomalías y obtener percepciones preliminares antes de aplicar métodos analíticos más avanzados. Durante el EDA, se realizan diversas operaciones, como la visualización de datos mediante gráficos, la descripción estadística de variables clave, y la identificación de relaciones entre diferentes características del conjunto de datos. Este proceso es esencial para orientar el análisis de datos subsiguiente y para tomar decisiones informadas sobre el enfoque y las técnicas que se aplicarán en el análisis más detallado.
 
-El Notebook donde se realizo el proceso EDA es el siguiente: [Analisis Exploratorio de Datos](https://github.com/Kipros21/PI01-MLOps-STEAMGAMES/blob/main/EDA_analisis_exploratorio_datos.ipynb)
+El Notebook donde se realizo el proceso EDA es el siguiente: [Analisis Exploratorio de Datos](https://github.com/Kipros21/PI01-MLOPS-STEAMGAMES/blob/main/EDA_analisis_exploratorio_datos.ipynb)
 
 ## **Etapa Modelado de Aprendizaje Automatico ML (Machine Learning)**
 En esta etapa se procede con la construcción de nuestro modelo de recomendación, hemos optado por utilizar el enfoque de similitud de coseno. Este modelo se centra en identificar juegos que comparten similitudes con aquellos que ya nos gustan. La lógica subyacente radica en que encontrar juegos con una similitud coseno más alta en comparación con nuestros favoritos puede resultar más valioso, ya que sugiere una afinidad más cercana en términos de características y preferencias. Este método se ajusta a la idea de descubrir juegos que se asemejan más a nuestros gustos actuales, mejorando así la calidad de las recomendaciones.
 
-El notebook donde se encontrará dicho modelado es el siguiente: [Modelo de Aprendizaje](https://github.com/Kipros21/PI01-MLOps-STEAMGAMES/blob/main/fea_eng_and_ML.ipynb)
+El notebook donde se encontrará dicho modelado es el siguiente: [Modelo de Aprendizaje](https://github.com/Kipros21/PI01-MLOPS-STEAMGAMES/blob/main/fea_eng_and_ML.ipynb)
 
 ## **Etapa Desarrollo de Funciones para la API (Application Programming Interface)**
 En esta etapa del proyecto, tras depurar la información, se realizaron elecciones cuidadosas de conjuntos de datos específicos para abordar cada función designada. Este enfoque estratégico se implementó con el propósito de optimizar de manera significativa las operaciones y mejorar los tiempos computacionales asociados a cada tarea. La selección precisa de datos contribuyó a una ejecución más eficiente y a resultados más efectivos en cada una de las funciones del proyecto.
@@ -109,12 +111,12 @@ En esta etapa del proyecto, tras depurar la información, se realizaron eleccion
 - **def recomendacion_juego( id de producto )**: Ingresando el id de producto, deberíamos recibir una lista con 5 juegos recomendados similares al ingresado.
 - **def recomendacion_usuario( id de usuario )**: Ingresando el id de un usuario, deberíamos recibir una lista con 5 juegos recomendados para dicho usuario.
 
-El Notebook donde se encuentran dichas funciones es el siguiente: [Funciones para API](https://github.com/Kipros21/PI01-MLOps-STEAMGAMES/blob/main/fea_eng_and_ML.ipynb)
+El Notebook donde se encuentran dichas funciones es el siguiente: [Funciones para API](https://github.com/Kipros21/PI01-MLOPS-STEAMGAMES/blob/main/fea_eng_and_ML.ipynb)
 
 ## **Etapa despliegue del API**
 
 ## **FastAPI**
-El código y las funciones para generar además de garantizar el correcto funcionamiento de la API se encuentra en el archivo [main.py](https://github.com/Kipros21/PI01-MLOps-STEAMGAMES/blob/main/main.py)  Para ejecutar la API desde localHost se deben seguir los siguientes pasos:
+El código y las funciones para generar además de garantizar el correcto funcionamiento de la API se encuentra en el archivo [main.py](https://github.com/Kipros21/PI01-MLOPS-STEAMGAMES/blob/main/main.py)  Para ejecutar la API desde localHost se deben seguir los siguientes pasos:
 
 - Clonar el proyecto haciendo `git clone https://github.com/Kipros21-PI1--MLOps_Steam_VideoGames.git`.
 - Preparación del entorno de trabajo en Visual Studio Code:
@@ -131,7 +133,7 @@ La elección de la plataforma Railway para implementar la API se basó en su enf
 En el marco de esta implementación:
 
 - Se creó exitosamente un nuevo servicio en railway.app, estableciendo una conexión efectiva con este repositorio.
-- Para acceder a la API en funcionamiento, se proporciona el siguiente enlace:
+- Para acceder a la API en funcionamiento, se proporciona el siguiente enlace: [Enlace RAILWAY](https://pi01-mlops-steamgames-production.up.railway.app/)
 - Este despliegue en Railway garantiza la accesibilidad y disponibilidad de la API, permitiendo una experiencia óptima para los usuarios finales.
 
 ## **Presentación de Video**
