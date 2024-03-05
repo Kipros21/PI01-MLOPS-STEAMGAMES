@@ -139,7 +139,7 @@ En el marco de esta implementación:
 ## **Presentación de Video**
 Les comparto el video que resume y presenta de manera visual mi proyecto. En este material audiovisual, podrán obtener una visión completa de los aspectos clave, desde la conceptualización hasta la implementación, destacando las funcionalidades y logros alcanzados. ¡Espero que disfruten la presentación y encuentren valiosa la información compartida!
 
-Enlace de video: 
+Enlace de video: [Video](https://www.youtube.com/watch?v=YP-Pz6kkw6E&ab_channel=CristhianHuanqui)
 
 ## **Conclusiones**
 La ejecución de este proyecto se basó en la aplicación de los conocimientos adquiridos durante el programa de Data Science en HENRY. Las tareas abordadas durante este proceso abarcan las responsabilidades típicas tanto de un Data Engineer como de un Data Scientist.
