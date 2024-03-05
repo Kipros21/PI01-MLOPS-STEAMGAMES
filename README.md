@@ -133,7 +133,7 @@ La elección de la plataforma Railway para implementar la API se basó en su enf
 En el marco de esta implementación:
 
 - Se creó exitosamente un nuevo servicio en railway.app, estableciendo una conexión efectiva con este repositorio.
-- Para acceder a la API en funcionamiento, se proporciona el siguiente enlace: [Enlace RAILWAY](https://pi01-mlops-steamgames-production.up.railway.app/)
+- Para acceder a la API en funcionamiento, se proporciona el siguiente enlace: [Enlace RAILWAY](https://pi01-mlops-steamgames-production.up.railway.app/docs)
 - Este despliegue en Railway garantiza la accesibilidad y disponibilidad de la API, permitiendo una experiencia óptima para los usuarios finales.
 
 ## **Presentación de Video**
